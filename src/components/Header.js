@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = props => (
+const Header = ({ title }) =>
   <header>
     <div className="container">
       <div className="row">
@@ -11,12 +11,11 @@ const Header = props => (
             src="/img/logo.png"
           />
           <div className="intro-text">
-            <span className="skills">{props.title}</span>
+            <span className="skills">{title}</span>
           </div>
         </div>
       </div>
     </div>
   </header>
-)
 
 export default Header
